@@ -1,0 +1,76 @@
+‎<!DOCTYPE html>
+‎<html lang="hi">
+‎<head>
+‎    <meta charset="UTF-8">
+‎    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎    <title>मोटिवेशनल कोट्स जनरेटर</title>
+‎    <style>
+‎        body {
+‎            font-family: Arial, sans-serif;
+‎            background: linear-gradient(135deg, #667eea, #764ba2);
+‎            color: #fff;
+‎            display: flex;
+‎            justify-content: center;
+‎            align-items: center;
+‎            height: 100vh;
+‎            margin: 0;
+‎        }
+‎        .container {
+‎            background: rgba(255, 255, 255, 0.1);
+‎            padding: 30px;
+‎            border-radius: 15px;
+‎            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+‎            text-align: center;
+‎            max-width: 400px;
+‎            width: 90%;
+‎        }
+‎        h1 {
+‎            font-size: 24px;
+‎            margin-bottom: 20px;
+‎        }
+‎        #quote {
+‎            font-size: 18px;
+‎            font-style: italic;
+‎            margin-bottom: 25px;
+‎            min-height: 60px;
+‎        }
+‎        button {
+‎            background-color: #ffcc00;
+‎            color: #333;
+‎            border: none;
+‎            padding: 10px 20px;
+‎            font-size: 16px;
+‎            font-weight: bold;
+‎            border-radius: 5px;
+‎            cursor: pointer;
+‎            transition: background 0.3s;
+‎        }
+‎        button:hover {
+‎            background-color: #e6b800;
+‎        }
+‎    </style>
+‎</head>
+‎<body>
+‎    <div class="container">
+‎        <h1>आज का विचार</h1>
+‎        <div id="quote">नया कोट देखने के लिए नीचे दिए गए बटन पर क्लिक करें!</div>
+‎        <button onclick="generateQuote()">नया कोट देखें</button>
+‎    </div>
+‎
+‎    <script>
+‎        const quotes = [
+‎            "सफलता एक दिन में नहीं मिलती, लेकिन ठान लो तो एक दिन जरूर मिलती है।",
+‎            "मुश्किलें दिल के इरादे आजमाने आती हैं, रास्ता दिखाने नहीं।",
+‎            "हर नया दिन आपकी जिंदगी बदलने का एक नया मौका है।",
+‎            "खुद पर भरोसा रखो, फिर देखो हर मुश्किल आसान हो जाएगी।",
+‎            "जितनी बड़ी आपकी रुकावट होगी, उतनी ही शानदार आपकी जीत होगी।"
+‎        ];
+‎
+‎        function generateQuote() {
+‎            const randomIndex = Math.floor(Math.random() * quotes.length);
+‎            document.getElementById('quote').innerText = quotes[randomIndex];
+‎        }
+‎    </script>
+‎</body>
+‎</html>
+‎
